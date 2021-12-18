@@ -20,7 +20,7 @@ const CreateBrand = ({show, onHide}) => {
         >
             <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
-                    Create type
+                    Create brand
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
@@ -28,7 +28,7 @@ const CreateBrand = ({show, onHide}) => {
                     <Form.Control
                         value={value}
                         onChange={e => setValue(e.target.value)}
-                        placeholder={"write type"}
+                        placeholder="write brand"
                     />
                 </Form>
             </Modal.Body>
