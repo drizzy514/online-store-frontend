@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Modal from "react-bootstrap/Modal";
 import {Form, Button} from "react-bootstrap";
+import {createType} from "../../http/deviceAPI";
 
 const CreateType = ({show, onHide}) => {
     const [value, setValue] = useState('')
