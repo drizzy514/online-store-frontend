@@ -11,10 +11,12 @@ const CreateDevice = observer(({show, onHide}) => {
     const [price, setPrice] = useState(0)
     const [file, setFile] = useState(null)
     const [info, setInfo] = useState([])
-
-    useEffect(() => {
+        
+    
         fetchTypes().then(data => device.setTypes(data))
         fetchBrands().then(data => device.setBrands(data))
+    useEffect(() => {
+       fetchTypes, fetchBrands
     }, [])
 
     const addInfo = () => {
