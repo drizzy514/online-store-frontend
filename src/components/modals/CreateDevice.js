@@ -15,10 +15,6 @@ const CreateDevice = observer(({show, onHide}) => {
     
         fetchTypes().then(data => device.setTypes(data))
         fetchBrands().then(data => device.setBrands(data))
-    useEffect(() => {
-       fetchTypes, fetchBrands
-    }, [])
-
     const addInfo = () => {
         setInfo([...info, {title: '', description: '', number: Date.now()}])
     }
